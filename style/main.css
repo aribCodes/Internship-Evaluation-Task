@@ -1,0 +1,128 @@
+/* <main> tag css starts from here */
+
+main{
+    box-sizing: border-box;
+}
+
+/* section 1 works starts here */
+main #sectionOne{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    background-image: url("/images/sectionOneBcg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+main #sectionOne .sectionOneContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main #sectionOne .sectionOneContainer #secOneHeadings{
+    color: white;
+    width: 70%;
+}
+main #sectionOne .sectionOneContainer #secOneHeadings h1{
+    font-size: 10vw;
+    font-weight: 800;
+}
+main #sectionOne .sectionOneContainer #secOneHeadings h2{
+    padding: 0%;
+    font-size: 5vw;
+    font-weight: 500;
+    text-align: right;
+}
+
+main #sectionOne .sectionOneContainer #secOneHeadings button{
+    float: right;
+    font-size: medium;
+    border: 1px solid white !important; 
+    background: transparent !important; 
+    color: #ffff !important; 
+    margin: 10px 0 30px 0 !important;
+}
+
+@media screen and (max-width: 990px) {
+	main #sectionOne .sectionOneContainer #secOneHeadings h2{
+        text-align: left;
+    }
+    main #sectionOne .sectionOneContainer #secOneHeadings button{
+        float: left;
+    }
+}
+
+
+/* section 2 works starts here */
+main #sectionTwo{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    background-image: url("/images/sectionTwoBcg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+main #sectionTwo .sectionTwoContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+main #sectionTwo .sectionTwoContainer #sectionTwoContent{
+    margin-left: 5%;
+    width: 55%;
+    text-align: left;
+}
+main #sectionTwo .sectionTwoContainer #sectionTwoContent button{
+    /* font-size: medium; */
+    border: 1px solid white !important; 
+    background: transparent !important; 
+    color: #ffff !important; 
+    margin: 10px 0 30px 0 !important;
+    padding: 0 13px 0 13px !important;
+}
+main #sectionTwo .sectionTwoContainer #sectionTwoImage{
+    width: 45%;
+    height: 70%;
+    position: relative;
+    right: -5%;
+}
+
+@media screen and (max-width: 990px) {
+    main #sectionTwo .sectionTwoContainer{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        /* background: lightblue; */
+        height: 76%;
+    }
+    main #sectionTwo .sectionTwoContainer #sectionTwoContent{
+        position: absolute;
+        align-self: end;
+        width: 90%;
+        /* background: lightgreen; */
+    }
+	main #sectionTwo .sectionTwoContainer #sectionTwoImage{
+        align-self: start;
+        width: 100%;
+        right: -20%;
+        height: 40%;
+        /* background: lightgreen; */
+    }
+    #sectionTwoContent h1{
+        font-size: 6vw !important;
+    }
+    #sectionTwoContent h2{
+        font-size: 4vw !important;
+    }
+    #sectionTwoContent h2 #secTwoSmallText{
+        font-size: 3vw !important;
+    }
+    #sectionTwoImage img{
+        width: inherit;
+    }
+}
