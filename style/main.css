@@ -23,7 +23,7 @@ main #sectionOne .sectionOneContainer{
 
 main #sectionOne .sectionOneContainer #secOneHeadings{
     color: white;
-    width: 70%;
+    width: 65%;
 }
 main #sectionOne .sectionOneContainer #secOneHeadings h1{
     font-size: 10vw;
@@ -46,7 +46,14 @@ main #sectionOne .sectionOneContainer #secOneHeadings button{
 }
 
 @media screen and (max-width: 990px) {
+    main #sectionOne .sectionOneContainer #secOneHeadings{
+        width: 90%;
+    }
+    main #sectionOne .sectionOneContainer #secOneHeadings h1{
+        font-size: 14vw;
+    }
 	main #sectionOne .sectionOneContainer #secOneHeadings h2{
+        font-size: 9vw;
         text-align: left;
     }
     main #sectionOne .sectionOneContainer #secOneHeadings button{
@@ -124,5 +131,294 @@ main #sectionTwo .sectionTwoContainer #sectionTwoImage{
     }
     #sectionTwoImage img{
         width: inherit;
+    }
+}
+
+/* section 3 works starts here */
+main #sectionThree{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background: black;
+}
+main #sectionThree .sectionThreeContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    padding: 0 2% 0 2%;
+}
+main #sectionThree .sectionThreeContainer #secThreeImage{
+    height: 400px;
+    width: 40%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+main #sectionThree .sectionThreeContainer #secThreeImage h1{
+    font-size: 4vw; 
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: white;
+    display: none;
+}
+main #sectionThree .sectionThreeContainer #secThreeImage img{
+    height: inherit;
+}
+main #sectionThree .sectionThreeContainer #secThreeContent{
+    margin-left: 25px;
+    padding: 0 0 30px 30px;
+    border-left: 2px solid #ffff;
+    color: white; 
+    width: 50%;
+}
+main #sectionThree .sectionThreeContainer #secThreeContent div{
+    background: #d91e27;
+    padding: 5px;
+    margin: 15px 0 0 0;
+}
+@media screen and (max-width: 990px) {
+    main #sectionThree{
+        height: initial;
+    }
+    main #sectionThree .sectionThreeContainer{
+        flex-direction: column;
+    }
+    main #sectionThree .sectionThreeContainer #secThreeImage{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 20px 0 20px 0;
+    }
+    main #sectionThree .sectionThreeContainer #secThreeImage h1{
+        font-size: 6vw; 
+        display: block;
+    }
+    main #sectionThree .sectionThreeContainer #secThreeImage img{
+        object-fit: contain;
+    }
+    main #sectionThree .sectionThreeContainer #secThreeContent{
+        margin-left: 0;
+        padding: 0;
+        border-left: 0px; 
+        width: 100%;
+    }
+    main #sectionThree .sectionThreeContainer #secThreeContent div{
+        background: #d91e27;
+        padding: 1px 5px 1px 5px;
+    }
+    main #sectionThree .sectionThreeContainer #secThreeContent h1{
+        display: none;
+    }
+}
+
+
+/* section 4 works starts here */
+main #sectionFour{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background: black;
+}
+main #sectionFour .sectionFourContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    padding: 0 2% 0 2%;
+}
+main #sectionFour .sectionFourContainer #secFourBottomBtn{
+    margin-top: 20px;
+    flex: 1;
+    align-self: flex-start;
+    display: none;
+}
+main #sectionFour .sectionFourContainer #secFourHeading{
+    display: flex;
+    align-items: center;
+}
+main #sectionFour .sectionFourContainer #secFourHeading h1{
+    flex: 1;
+    justify-self: end;
+    font-size: 4vw; 
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white !important;
+}
+main #sectionFour .sectionFourContainer #secFourCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    overflow-x: scroll;
+}
+main #sectionFour .sectionFourContainer #secFourCards::-webkit-scrollbar { 
+    display: none; /* Safari and Chrome */
+}
+
+@media screen and (max-width: 990px) {
+    main #sectionFour .sectionFourContainer #secFourBottomBtn{
+        display: block;
+    }
+    main #sectionFour .sectionFourContainer #secFourHeading h1{
+        font-size: 6vw; 
+        padding-left: 10px;
+    }
+    main #sectionFour .sectionFourContainer #secFourHeading button{
+        display: none;
+    }
+    main #sectionFour .sectionFourContainer #secFourCards{
+        justify-content: start;
+    }
+    main #sectionFour .sectionFourContainer #secFourCards .card{
+        min-width: 287px !important;
+    }
+}
+
+/* section 5 works starts here */
+main #sectionFive{
+    width: 100%;
+    height: 110vh;
+    /* overflow: hidden; */
+    display: flex;
+    /* align-items: center; */
+    background: rgb(0, 0, 0);
+}
+main #sectionFive .sectionFiveContainer{
+    width: 100%;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2% 0 2%;
+    background: #D91E27;
+}
+main #sectionFive .sectionFiveContainer #secFiveContent{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+main #sectionFive .sectionFiveContainer #secFiveContent h1{
+    font-weight: 700;
+    /* font-size: larger; */
+}
+main #sectionFive .sectionFiveContainer #secFiveContent p{
+    font-size: 18px;
+    padding: 0 5% 0 5%;
+}
+main #sectionFive .sectionFiveContainer #secFiveImage{
+    width: 700px;
+    height: 410px;
+}
+main #sectionFive .sectionFiveContainer #secFiveImage img{
+    height: inherit;
+}
+main #sectionFive .sectionFiveContainer #secFiveCounters{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main #sectionFive .sectionFiveContainer #secFiveCounters div{
+    width: 30%;
+    text-align: center;
+}
+
+@media screen and (max-width: 990px) {
+    main #sectionFive{
+        width: 100%;
+        height: 60vh;
+    }
+    main #sectionFive .sectionFiveContainer{
+        height: 270px;
+    }
+    main #sectionFive .sectionFiveContainer #secFiveContent{
+        width: 80%;
+    }
+    main #sectionFive .sectionFiveContainer #secFiveContent p{
+        display: none;
+    }
+    main #sectionFive .sectionFiveContainer #secFiveImage{
+        width: 100%;
+        height: 190px;
+    }
+    main #sectionFive .sectionFiveContainer #secFiveCounters div p{
+        display: block;
+        font-size: 10px;
+    }
+}
+
+/* section 6 works starts here */
+main #sectionSix{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+}
+main #sectionSix .sectionSixContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2% 0 2%;
+}
+main #sectionSix .sectionSixContainer #secSixHeading{
+    margin: 10px 0 30px 0;
+    color: white;
+}
+main #sectionSix .sectionSixContainer #secSixHeading h1{
+    font-weight: 800 !important;
+}
+main #sectionSix .sectionSixContainer #carousel{
+    display: none;
+}
+main #sectionSix .sectionSixContainer #secSixCards{
+    display: flex;
+    justify-content: center;
+    /* overflow-x: scroll; */
+    gap: 15px;
+}
+
+main #sectionSix .sectionSixContainer #secSixLogos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+main #sectionSix .sectionSixContainer #secSixLogos h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 800 !important;
+    color: white;
+}
+main #sectionSix .sectionSixContainer #secSixLogos div{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+@media screen and (max-width: 990px) {
+    main #sectionSix{
+        height: 70vh;
+    }
+    main #sectionSix .sectionSixContainer #carousel{
+        display: block;
+        width: 80%;
+    }
+    main #sectionSix .sectionSixContainer #secSixCards{
+        display: none;
+    }
+    main #sectionSix .sectionSixContainer #secSixLogos div{
+        width: 100%;
     }
 }
