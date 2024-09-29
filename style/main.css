@@ -26,7 +26,7 @@ main #sectionOne .sectionOneContainer #secOneHeadings{
     width: 65%;
 }
 main #sectionOne .sectionOneContainer #secOneHeadings h1{
-    font-size: 10vw;
+    font-size: 9vw;
     font-weight: 800;
 }
 main #sectionOne .sectionOneContainer #secOneHeadings h2{
@@ -420,5 +420,74 @@ main #sectionSix .sectionSixContainer #secSixLogos div{
     }
     main #sectionSix .sectionSixContainer #secSixLogos div{
         width: 100%;
+    }
+}
+
+/* section 7 works starts here */
+main #sectionSeven{
+    height: 90vh;
+    width: 100%;
+    background: url("/images/secSevenBcg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #D91E27;
+}
+main #sectionSeven .sectionSevenContainer{
+    text-align: center;
+    height: 100%;
+}
+main #sectionSeven .sectionSevenContainer div{
+    padding-top: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+main #sectionSeven .sectionSevenContainer div h1{
+    width: 70%;
+    text-align: center;
+}
+main #sectionSeven .sectionSevenContainer #secSevenButtons {
+    display: flex;
+    height: 70vh;
+}
+main #sectionSeven .sectionSevenContainer #secSevenButtons div{
+    flex: 1;
+    height: 100px;
+}
+main #sectionSeven .sectionSevenContainer #secSevenButtons div img{
+    object-fit: contain;
+    object-position: center;
+}
+main #sectionSeven .sectionSevenContainer #secSevenButtons #button1{
+    align-self: center;
+}
+main #sectionSeven .sectionSevenContainer #secSevenButtons #button2{
+    align-self: center;
+}
+
+@media screen and (max-width: 990px) {
+    main #sectionSeven{
+        height: 35vh;
+    }
+    main #sectionSeven .sectionSevenContainer div h1{
+        width: 90%;
+    }
+    main #sectionSeven .sectionSevenContainer #secSevenButtons {
+        height: 22vh;
+        gap: 10px;
+    }
+    main #sectionSeven .sectionSevenContainer #secSevenButtons div{
+        height: 50px;
+        display: flex;
+    }
+    main #sectionSeven .sectionSevenContainer #secSevenButtons #button1{
+        justify-content: right;
+        align-self: flex-end;
+        margin-left: -15px;
+    }
+    main #sectionSeven .sectionSevenContainer #secSevenButtons #button2{
+        justify-content: left;
+        align-self: flex-end;
     }
 }

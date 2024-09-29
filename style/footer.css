@@ -1,0 +1,18 @@
+/* footer tag work starts here */
+footer{
+    height: 90vh;
+    width: 100%;
+    background: #171715;
+    overflow: hidden;
+}
+footer #footerContainer{
+    height: 100%;
+}
+footer #footerContainer #footerForm{
+    height: 100%;
+    background: #b9b96e;
+}
+footer #footerContainer #footerDetails{
+    height: 100%;
+    background: #89b96e;
+}
