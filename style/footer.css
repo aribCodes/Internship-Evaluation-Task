@@ -1,18 +1,73 @@
 /* footer tag work starts here */
-footer{
-    height: 90vh;
-    width: 100%;
-    background: #171715;
-    overflow: hidden;
+footer {
+	height: 105vh;
+	width: 100%;
+	background: #171715;
+	overflow: hidden;
 }
-footer #footerContainer{
-    height: 100%;
+footer #footerContainer {
+	height: 100%;
+	padding: 0 2% 0 2%;
 }
-footer #footerContainer #footerForm{
-    height: 100%;
-    background: #b9b96e;
+footer #footerContainer #footerForm {
+	display: flex;
+	align-items: center;
+	height: 100%;
 }
-footer #footerContainer #footerDetails{
-    height: 100%;
-    background: #89b96e;
+footer #footerContainer #footerForm #formContent p {
+	margin-left: 15px;
+	width: 60%;
+	font-weight: 600;
+	color: #8f9fa3;
+}
+footer #footerContainer #footerForm #formContent span {
+	margin-left: 13px;
+	font-size: small;
+	font-weight: 600;
+	color: #d91e27;
+}
+footer #footerContainer #footerForm #formContent h3 {
+	margin: 0 0 0 13px;
+}
+footer #footerContainer #footerForm #formContent .form-floating input {
+	background: transparent !important;
+	color: white;
+	border-radius: 15px;
+}
+footer #footerContainer #footerForm #formContent .form-floating label {
+	color: grey !important;
+}
+footer #footerContainer #footerForm #formContent .form-floating label::after {
+	background: transparent !important;
+}
+footer #footerContainer #footerDetails {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	background: #89b96e;
+}
+
+@media screen and (max-width: 990px) {
+	footer #footerContainer #footerForm {
+		height: 50%;
+	}
+    footer #footerContainer #footerForm #formContent p {
+        font-size: small;
+        width: 95%;
+    }
+    footer #footerContainer #footerForm #formContent span {
+        font-size: smaller;
+    }
+    footer #footerContainer #footerForm #formContent h3 {
+        font-size: medium;
+    }
+    footer #footerContainer #footerForm #formContent .form-floating input {
+        font-size: small;
+    }
+    footer #footerContainer #footerForm #formContent .form-floating label {
+        font-size: small;
+    }
+	footer #footerContainer #footerDetails {
+		height: 50%;
+	}
 }

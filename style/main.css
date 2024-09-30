@@ -470,8 +470,13 @@ main #sectionSeven .sectionSevenContainer #secSevenButtons #button2{
     main #sectionSeven{
         height: 35vh;
     }
+    main #sectionSeven .sectionSevenContainer div{
+        padding-top: 25px;
+    }
     main #sectionSeven .sectionSevenContainer div h1{
-        width: 90%;
+        font-size: larger;
+        width: 70%;
+        font-weight: 700;
     }
     main #sectionSeven .sectionSevenContainer #secSevenButtons {
         height: 22vh;
