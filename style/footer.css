@@ -7,7 +7,7 @@ footer {
 }
 footer #footerContainer {
 	height: 100%;
-	padding: 0 2% 0 2%;
+	padding: 0 4% 0 4%;
 }
 footer #footerContainer #footerForm {
 	display: flex;
@@ -44,10 +44,77 @@ footer #footerContainer #footerDetails {
 	display: flex;
 	align-items: center;
 	height: 100%;
-	background: #89b96e;
+	/* background: #89b96e; */
+}
+
+/* Right side of footer */
+footer #footerContainer #footerDetails #detailsContent {
+	width: 100%;
+}
+footer #footerContainer #footerDetails #detailsContent #detailOne {
+	display: flex;
+    font-size: medium;
+    width: 100%;
+}
+footer #footerContainer #footerDetails #detailsContent #detailOne #detailOneLeft{
+	width: 30%;
+}
+footer #footerContainer #footerDetails #detailsContent #detailOne #detailOneRight{
+	width: 70%;
+    color: white;
+    /* background: yellow; */
+}
+footer #footerContainer #footerDetails #detailsContent #detailOne #detailOneRight h6{
+	font-weight: 700;
+}
+footer #footerContainer #footerDetails #detailsContent #detailOne #detailOneRight p{
+	margin: 0;
+}
+footer #footerContainer #footerDetails #detailsContent #detailOne h5{
+	color: #d91e27;
+}
+footer #footerContainer #footerDetails #detailsContent #detailOne a{
+	text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer #footerContainer #footerDetails #detailsContent #detailTwo {
+    width: 100%;
+	margin-top: 15px;
+}
+footer #footerContainer #footerDetails #detailsContent #detailTwo .row{
+	margin-top: 10px;
+}
+footer #footerContainer #footerDetails #detailsContent #detailTwo h6 {
+	color: white;
+    font-size: larger;
+}
+
+footer #footerContainer #footerDetails #detailsContent #detailThree {
+	margin-top: 10px;
+}
+footer #footerContainer #footerDetails #detailsContent #detailThree .row #div1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: white;
+}
+footer #footerContainer #footerDetails #detailsContent #detailThree .row #div1 a{
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+}
+footer #footerContainer #footerDetails #detailsContent #detailThree .row #div2{
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 990px) {
+    footer {
+        height: 150vh;
+    }
 	footer #footerContainer #footerForm {
 		height: 50%;
 	}
@@ -70,4 +137,36 @@ footer #footerContainer #footerDetails {
 	footer #footerContainer #footerDetails {
 		height: 50%;
 	}
+
+    footer #footerContainer #footerDetails #detailsContent #detailOne #detailOneLeft{
+        font-size: small;
+        width: 50%;
+    }
+    footer #footerContainer #footerDetails #detailsContent #detailOne #detailOneRight{
+        width: 50%;
+        font-size: small;
+    }
+    footer #footerContainer #footerDetails #detailsContent #detailTwo {
+        width: 45%;
+        margin-top: -140px;
+    }
+    footer #footerContainer #footerDetails #detailsContent #detailTwo h6 {
+        font-size: small;
+    }
+
+    footer #footerContainer #footerDetails #detailsContent #detailThree .row #div1{
+        flex-direction: column;
+        width: 50%;
+    }
+    footer #footerContainer #footerDetails #detailsContent #detailThree .row #div2{
+        width: 50%;
+        justify-content: start;
+    }
+    footer #footerContainer #footerDetails #detailsContent #detailThree .row #div1 a{
+        font-size: small;
+        margin-top: 5px;
+    }
+    footer #footerContainer #footerDetails #detailsContent #detailThree .row #div1 span{
+        display: none;
+    }
 }
