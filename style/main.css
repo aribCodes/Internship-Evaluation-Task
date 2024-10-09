@@ -9,7 +9,7 @@ main #sectionOne{
     width: 100%;
     height: 90vh;
     overflow: hidden;
-    background-image: url("./images/sectionOneBcg.png");
+    background-image: url("/images/sectionOneBcg.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -67,7 +67,7 @@ main #sectionTwo{
     width: 100%;
     height: 90vh;
     overflow: hidden;
-    background-image: url("./images/sectionTwoBcg.png");
+    background-image: url("/images/sectionTwoBcg.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -428,7 +428,7 @@ main #sectionSix .sectionSixContainer #secSixLogos div{
 main #sectionSeven{
     height: 90vh;
     width: 100%;
-    background: url("./images/secSevenBcg.png");
+    background: url("/images/secSevenBcg.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
